@@ -63,6 +63,10 @@ body{
     font-size: 35px;
 }
 
+#header a span{
+
+}
+
 /* HEADER END */
 
 /* NAVBAR START */
@@ -225,6 +229,24 @@ body{
 
 /* CARD UPPER HEADING START */
 
+#subheading h3{
+    font-size: 30px;
+    color: black;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70px;
+    padding-top: 50px;
+}
+
+#subheading a{
+    text-decoration: none;
+}
+
+#subheading h3:hover{
+    text-decoration: underline;
+}
+
+
 #heading h2{
     font-size: 40px;
     color: black;
@@ -238,7 +260,7 @@ body{
     margin: 10px auto 40px auto;
 }
 
-/* CARD UPPER HEADING END */
+/* SOLO SINGERS CARD */
 
 #card-product .pro-container{
     display: flex;
@@ -317,4 +339,104 @@ body{
      justify-content: space-between;
 }
 
+#card-product:hover{
+    transform:  transform: translateY(-5px);;
+}
+
 /* CARD END */
+
+/* ALBUMS CARD */
+
+#image1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+#image1:hover{
+    filter: grayscale(3);
+}
+
+/* MOVIES CARD */
+
+#movieparent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#mbtn{
+    border-radius: 30px;
+    background-color: #1F51FF;
+    color: white;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3 ease;
+}
+
+#mbtn:hover{
+    color: white;
+    background-color: purple;
+}
+
+#mtxt a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(253, 245, 245);
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+#mtxt p{
+    font-size: 15px;
+    color: rgb(248, 240, 240);
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+#mtxt a:hover{
+    text-decoration: underline;
+}
+
+#epi{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color:  #00ffff;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#moviecard{
+    width: 300px; 
+    background-color: #1f1f1f; 
+    color: #ffffff;
+    border-radius: 35px;
+    overflow: hidden; 
+    margin: 15px; 
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+#moviecard:hover{
+     transform: translateY(-5px); 
+}
+
+#image2{
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+}
+
