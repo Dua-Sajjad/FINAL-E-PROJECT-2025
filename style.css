@@ -1,77 +1,77 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 64px;
     color: black;
 }
 
-h2{
+h2 {
     font-size: 46px;
     line-height: 54px;
     color: black;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: black;
 }
 
-h4{
+h4 {
     font-weight: 700;
     color: black;
 }
 
-p{
+p {
     font-size: 16px;
     color: black;
     margin: 15px 0 20px 0;
 }
 
-body{
+body {
     width: 100%;
 }
 
 /* HEADER START */
 
-#header a img{
+#header a img {
     width: 50px;
     height: 50px;
 }
 
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
     background: white;
-    box-shadow: 0 5px 15px black(0,0,0,0.06);
+    box-shadow: 0 5px 15px black(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
 }
 
-#header a{
+#header a {
     text-decoration: none;
-    color: orangered;
+    color: black;
     font-size: 35px;
 }
 
-#header a span{
-
+#header a span {
+    color: #1F51FF;
 }
 
 /* HEADER END */
 
 /* NAVBAR START */
 
-#navbar{
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,31 +79,30 @@ body{
     position: sticky;
     top: 0;
     left: 0;
-    margin-bottom: 15px;  
-    background-color: #32527B;
+    margin-bottom: 15px;
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#navli a{
+#navli a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: rgb(32, 2, 2);
     transition: 0.3 ease;
 }
 
 #navli a:hover,
-#navli a.active{
+#navli a.active {
     color: red;
 }
 
 #navli a.active::after,
-#navli a:hover::after{
+#navli a:hover::after {
     content: "";
     width: 20%;
     height: 2px;
@@ -113,7 +112,7 @@ body{
     left: 20px;
 }
 
-#shop a{
+#shop a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -122,12 +121,12 @@ body{
 }
 
 #shop a:hover,
-#shop a.active{
+#shop a.active {
     color: black;
 }
 
 #shop a.active::after,
-#shop a:hover::after{
+#shop a:hover::after {
     content: "";
     width: 20%;
     height: 2px;
@@ -139,7 +138,7 @@ body{
 
 /* NAVBAR END */
 
-#hero{
+#hero {
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -147,7 +146,7 @@ body{
     padding: 0 80px;
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     flex-direction: column;
     background: url(img/musicb1.jpg);
     /* background-color:  #32527B; */
@@ -155,19 +154,19 @@ body{
     /* background-color: #C0C0C0 ; */
 }
 
-#hero h1{
+#hero h1 {
     color: white;
     font-size: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-#hero p{
+#hero p {
     font-size: 18px;
     color: darkgrey;
 }
 
-#hero button{
+#hero button {
     border-radius: 30px;
     background-color: blue;
     color: white;
@@ -179,7 +178,7 @@ body{
     transition: 0.3 ease;
 }
 
-#hero button:active{
+#hero button:active {
     background-color: orangered;
     color: white;
 }
@@ -188,7 +187,7 @@ body{
 
 /* FEATURE BANNER  */
 
-#feature{
+#feature {
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -196,19 +195,19 @@ body{
     padding: 0 80px;
     display: flex;
     align-items: center;
-   
+    justify-content: center;
     flex-direction: column;
 }
 
-#feature h2{
+#feature h2 {
     font-family: fantasy;
 }
 
-#feature p{
-    text-align: center;   
+#feature p {
+    text-align: center;
 }
 
-#feature button{
+#feature button {
     border-radius: 30px;
     background-color: blue;
     color: white;
@@ -220,7 +219,7 @@ body{
     transition: 0.3 ease;
 }
 
-#feature button:hover{
+#feature button:hover {
     background-color: orangered;
     color: white;
 }
@@ -229,7 +228,7 @@ body{
 
 /* CARD UPPER HEADING START */
 
-#subheading h3{
+#subheading h3 {
     font-size: 30px;
     color: black;
     text-align: start;
@@ -238,23 +237,23 @@ body{
     padding-top: 50px;
 }
 
-#subheading a{
+#subheading a {
     text-decoration: none;
 }
 
-#subheading h3:hover{
+#subheading h3:hover {
     text-decoration: underline;
 }
 
 
-#heading h2{
+#heading h2 {
     font-size: 40px;
     color: black;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#heading hr{
+#heading hr {
     border: 0.5px solid brown;
     width: 90%;
     margin: 10px auto 40px auto;
@@ -262,20 +261,20 @@ body{
 
 /* SOLO SINGERS CARD */
 
-#card-product .pro-container{
+#card-product .pro-container {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
 }
 
-#image{
+#image {
     width: 200px;
     height: 200px;
     border-radius: 170px;
 }
 
-#image:hover{
+#image:hover {
     filter: grayscale(3);
 }
 
@@ -285,17 +284,17 @@ body{
     border: 1px solid white;
     border-radius: 25px;
     cursor: pointer;
-    box-shadow: 20px 20px 30px black(0,0,0,0.06);
+    box-shadow: 20px 20px 30px black(0, 0, 0, 0.06);
     margin: 15px;
     transition: 0.2s ease;
-    position: relative;   
+    position: relative;
 }
 
-.pro:hover{
-    box-shadow: 20px 20px 30px black(0,0,0,0.06);
+.pro:hover {
+    box-shadow: 20px 20px 30px black(0, 0, 0, 0.06);
 }
 
-.pro img{
+.pro img {
     width: 100%;
     border-radius: 20px;
 }
@@ -305,7 +304,7 @@ body{
     padding: 10px 0;
 }
 
-.pro .des h5{
+.pro .des h5 {
     font-size: 15px;
     padding-top: 7px;
     color: black;
@@ -314,52 +313,53 @@ body{
     margin-left: 10px;
 }
 
-.pro .des h5:hover{
+.pro .des h5:hover {
     text-decoration: underline;
 }
 
-.pro .des p{
+.pro .des p {
     font-size: 15px;
     padding-top: 0;
-    color:  #D3D3D3;
+    color: #D3D3D3;
     text-align: start;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 10px;
     line-height: 1;
 }
 
-.pro .des a{
+.pro .des a {
     text-decoration: none;
 }
 
-#parentofcard{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: space-between;
+#parentofcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#card-product:hover{
-    transform:  transform: translateY(-5px);;
+#card-product:hover {
+    transform: transform: translateY(-5px);
+    ;
 }
 
 /* CARD END */
 
 /* ALBUMS CARD */
 
-#image1{
+#image1 {
     width: 200px;
     height: 200px;
     border-radius: 50px;
 }
 
-#image1:hover{
+#image1:hover {
     filter: grayscale(3);
 }
 
 /* MOVIES CARD */
 
-#movieparent{
+#movieparent {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -367,7 +367,7 @@ body{
     padding-top: 20px;
 }
 
-#mbtn{
+#mbtn {
     border-radius: 30px;
     background-color: #1F51FF;
     color: white;
@@ -379,12 +379,12 @@ body{
     transition: 0.3 ease;
 }
 
-#mbtn:hover{
+#mbtn:hover {
     color: white;
     background-color: purple;
 }
 
-#mtxt a{
+#mtxt a {
     text-decoration: none;
     font-size: 15px;
     color: rgb(253, 245, 245);
@@ -393,7 +393,7 @@ body{
     font-weight: bolder;
 }
 
-#mtxt p{
+#mtxt p {
     font-size: 15px;
     color: rgb(248, 240, 240);
     text-align: start;
@@ -401,15 +401,15 @@ body{
     line-height: 1;
 }
 
-#mtxt a:hover{
+#mtxt a:hover {
     text-decoration: underline;
 }
 
-#epi{
+#epi {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color:  #00ffff;
+    background-color: #00ffff;
     color: black;
     padding: 4px 8px;
     border-radius: 4px;
@@ -417,26 +417,185 @@ body{
     font-weight: bold;
 }
 
-#moviecard{
-    width: 300px; 
-    background-color: #1f1f1f; 
+#moviecard {
+    width: 300px;
+    background-color: #1f1f1f;
     color: #ffffff;
     border-radius: 35px;
-    overflow: hidden; 
-    margin: 15px; 
+    overflow: hidden;
+    margin: 15px;
     padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
     text-align: center;
 }
 
-#moviecard:hover{
-     transform: translateY(-5px); 
+#moviecard:hover {
+    transform: translateY(-5px);
 }
 
-#image2{
+#image2 {
     width: 100%;
-    height: 180px; 
-    object-fit: cover;
+    height: 170px;
+    /* object-fit: cover; */
+    border-radius: 30px;
 }
+
+/* BANDS CARD */
+
+#bandcard {
+    width: 250px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: 35px;
+    overflow: hidden;
+    margin: 40px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+#bandcard:hover {
+    transform: translateY(-5px);
+}
+
+#image3 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+#playbtn {
+    background-color: #1F51FF;
+    height: 50px;
+    width: 50px;
+    border-radius: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    transition: 0.3s ease;
+}
+
+#playbtn:hover {
+    transform: scale(1.1);
+}
+
+#parentofband{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 40px;
+    width: 100%;
+    height: 400px;
+    margin: 15px 0px 15px 0px;
+    background-color: antiquewhite;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#fo1{
+    width: 60px;
+    height: 60px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer .follow i{
+    color: gray;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    width: 150px;
+    height: 60px;
+    padding: 10px;  
+    flex-direction: row;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+     color: #00ffff;
+}
+
+.child1{
+    flex-direction: row;
+    
+}
+
+.child2{
+    flex-direction: row;
+   
+}
+
+.child3{
+    flex-direction: row;
+    
+}
+
+.child4 .ipay img{
+    width: 25px;
+    height: 20px;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .copyright p{
+    color: gray;
+}
+
 
