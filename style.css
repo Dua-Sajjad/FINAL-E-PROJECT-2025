@@ -60,7 +60,7 @@ body {
 }
 
 
-.sub-child{
+.sub-child {
     display: flex;
 }
 
@@ -87,6 +87,14 @@ body {
     top: 0;
     left: 0;
     margin-bottom: 15px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
 }
 
 #navbar li {
@@ -234,14 +242,14 @@ body {
 /* CARD START */
 
 /* CARD UPPER HEADING START */
-#subheading{
+#subheading {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#subheading button{
+#subheading button {
     height: max-content;
     padding: 6px 12px;
 }
@@ -249,7 +257,7 @@ body {
 #subheading h3 {
     font-size: 30px;
     color: black;
-  
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 70px;
     padding-top: 50px;
@@ -507,7 +515,7 @@ body {
     transform: scale(1.1);
 }
 
-#parentofband{
+#parentofband {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -517,7 +525,7 @@ body {
 
 /* FOOTER SECTION */
 
-footer{
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -531,89 +539,189 @@ footer{
     padding-right: 30px;
 }
 
-footer .col{
+footer .col {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-#fo1{
+#fo1 {
     width: 60px;
     height: 60px;
 }
 
-footer h4{
+footer h4 {
     font-size: 14px;
     padding-bottom: 20px;
 }
 
-footer p{
+footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
 }
 
-footer a{
+footer a {
     font-size: 13px;
     margin-bottom: 10px;
     text-decoration: none;
     color: #1f1f1f;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
-footer .follow i{
+footer .follow i {
     color: gray;
     padding-right: 4px;
     cursor: pointer;
 }
 
-footer .install .row img{
+footer .install .row img {
     width: 150px;
     height: 60px;
-    padding: 10px;  
+    padding: 10px;
     flex-direction: row;
 }
 
-footer .install img{
+footer .install img {
     margin: 10px 0 15px 0;
 }
 
 footer .follow i:hover,
-footer a:hover{
-     color: #00ffff;
+footer a:hover {
+    color: #00ffff;
 }
 
-.child1{
+.child1 {
     flex-direction: row;
-    
 }
 
-.child2{
+.child2 {
     flex-direction: row;
-   
 }
 
-.child3{
+.child3 {
     flex-direction: row;
-    
 }
 
-.child4 .ipay img{
+.child4 .ipay img {
     width: 25px;
     height: 20px;
 }
 
-footer .copyright{
+.child4 .row a {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .copyright {
     width: 100%;
     text-align: center;
     padding-top: 20px;
 }
 
-footer .copyright p{
+footer .copyright p {
     color: gray;
 }
 
+footer .section-p1 h4 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+/* MEDIA QUERY */
+
+@media (max-width:768px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        right: -300px;
+        top: 140px;
+        left: 540px;
+        height: 25vh;
+        width: 200px;
+        background-color: greenyellow;
+        box-shadow: 0 40px 60px black(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        border-radius: 20px;
+
+    }
+
+    #menu.active {
+        right: 0px;
+        color: #00ffff;
+        display: flex;
+    }
+
+    #nav li {
+        margin-bottom: 25px;
+    }
+
+    #navli a:hover,
+    #navli a.active {
+        color: red;
+    }
+
+    #navli a.active::after,
+    #navli a:hover::after {
+        content: "";
+        width: 20%;
+        height: 2px;
+        background: burlywood;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+    }
+
+    #mobile {
+        display: flex;
+        padding-left: 600px;
+
+    }
+
+    #mobile i {
+        color: #1f1f1f;
+        font-size: 24px;
+        padding-left: 40px;
+    }
+
+    #feature h2 {
+        text-align: center;
+    }
+
+    #card-product .pro-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 40px;
+        width: 100%;
+        height: 400px;
+        margin: 15px 0px 15px 0px;
+        background-color: antiquewhite;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .child1 {
+        flex-direction: column;
+    }
+
+    .child2 {
+        flex-direction: column;
+    }
+
+
+
+}
