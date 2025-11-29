@@ -71,7 +71,7 @@ body {
 }
 
 #header a span {
-    color: #1F51FF;
+    color: brown;
 }
 
 /* HEADER END */
@@ -113,7 +113,7 @@ body {
 
 #navli a:hover,
 #navli a.active {
-    color: red;
+    color: rgb(201, 115, 115);
 }
 
 #navli a.active::after,
@@ -131,7 +131,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    color: beige;
+    color: brown;
     transition: 0.3 ease;
 }
 
@@ -156,29 +156,33 @@ body {
 #hero {
     height: 90vh;
     width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
+    background-size: contain;
+    background-position: center;
     padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(img/musicb1.jpg);
-    /* background-color:  #32527B; */
-    /* background-color: #CCA25A; */
-    /* background-color: #C0C0C0 ; */
+    /* background: url(../img/bn2.jpg); */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#hero img{
+    width:1400px;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    display: block;
 }
 
 #hero h1 {
-    color: white;
+    color: black;
     font-size: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-}
-
-#hero p {
-    font-size: 18px;
-    color: darkgrey;
+    position: absolute;
+    z-index: 5;
 }
 
 #hero button {
@@ -632,6 +636,81 @@ footer .section-p1 h4 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* MEMBERSHIP SECTION */
+
+#parentofplan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    padding-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+#plancard .txt1{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#plancard #price{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    font-weight: bold
+}
+
+#mtxt li{
+    list-style: none;
+    margin: 15px;
+    text-align: center;
+}
+
+.plan2{
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#plancard:hover{
+     transform: translateY(-5px);
+}
+
+#plancard{
+    transition: 0.3s ease;
+}
+
+.plan1:hover{
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#member{
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+#member mtxt h2{
+    text-align: center;
+}
+
+#hplan h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* ABOUT SECTION */
+
+#hero .aboutheader{
+
+}
+
 /* MEDIA QUERY */
 
 @media (max-width:768px) {
@@ -721,7 +800,4 @@ footer .section-p1 h4 {
     .child2 {
         flex-direction: column;
     }
-
-
-
 }
